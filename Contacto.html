@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Boca Juniors Fanpage</title>
+    <link rel="icon" href="multimedia/boca.ico">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Titulos.html">Titulos</a></li>
+                <li><a href="Idolos.html">Idolos</a></li>
+                <li><a href="eShop.html">eShop</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2 class="tit_form">Dejanos un mensaje junto a tus datos para poder responderte:</h2>
+
+            <form class="formulario" action="https://formspree.io/f/myzykkra" method="POST" target="_blank">
+
+                <label for="nombre">Nombre: </label>
+                <input type="text" size="15" name="Nombre" id="nombre" placeholder="Ingrese su nombre..." required>
+                <label for="apellido">Apellido: </label>
+                <input size="20" placeholder="Ingrese su apellido..." type="text" name="Apellido" id="apellido" required><br>
+                <label for="correo">e-Mail: </label>
+                <input size="30" placeholder="Ingrese su correo..." type="Email" name="e-Mail" id="correo" required>
+                <label for="telefono">Teléfono:</label>
+                <input size="10" placeholder="Ingrese su telefono..." type="tel" name="Telefono" id="telefono"><br>
+                <label for="mensaje">Deje su mensaje:</label><br>
+                <textarea name="Mensaje" rows="10" cols="45" id="mensaje" placeholder="Escriba su mensaje..." required></textarea><br>
+                <input class="boton" type="submit" value="Enviar">
+                <!-- <button type="submit">Enviar</button> -->
+                <button class="boton" type="reset">Borrar</button>
+                <!-- <input type="reset" value="Borrar"> -->
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+
+        <h4>Segui a Boca en:</h4>
+        <ul>
+            <li><a target="_blank" href="https://www.instagram.com/bocajrs/"><i class="fi fi-brands-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/BocaJuniors/"><i class="fi fi-brands-facebook"></i></a></li>
+            <li><a target="_blank" href="https://x.com/BocaJrsOficial"><i class="fi fi-brands-twitter-alt-circle"></i></a></li>
+            <li><a target="_blank" href="https://www.youtube.com/@ElCanaldeBoca"><i class="fi fi-brands-youtube"></i></a></li>
+        </ul>
+
+    </footer>
+
+</body>
+</html>
