@@ -14,10 +14,12 @@
 
     <header>
 
-        <audio class="musica" controls autoplay muted>
+        <!--<audio class="musica" controls autoplay muted>
             <source src="multimedia/dale-dale-dale-boca.mp3" type="audio/mp3">
             El navegador no soporta el tipo de audio.
-        </audio>
+        </audio>-->
+
+        <img class="logo" src="multimedia/escudoboca.png" alt="Escudo de Boca">
 
         <nav class="cont_menu">
             <ul class="menu">
@@ -109,16 +111,12 @@
 
                 <h3 class="titulo_mapa">Ubicación:</h3>
 
-                <div class="cont_mapa">
                     <iframe class="mapa_estadio"
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.02320237945!2d-58.3647563!3d-34.6356109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334b6925e5473%3A0x1ca5b2748858b40d!2sEstadio%20Alberto%20Jos%C3%A9%20Armando!5e0!3m2!1ses-419!2sar!4v1729369788272!5m2!1ses-419!2sar"; allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
-                </div>
 
-                <div class="cont_foto">
                 <img class="foto_estadio" src="multimedia/la_bombonera3.jpg" alt="La bombonera - Estadio Alberto J. Armando">
-                </div>
 
             </aside>
 
@@ -126,7 +124,7 @@
 
         <section>
 
-            <h2 id="frases" class="titulo_cuatro">Frases historicas de Jugadores</h2>
+            <h2 id="frases" class="titulo_cuatro">Frases historicas del mundo Boca</h2>
 
             <div class="grid_cont">
                 <div class="grid_item_1">
@@ -168,26 +166,34 @@
                         alt="Camiseta Titular de Boca">
                         <h3 class="item_titulo">Camiseta Titular Boca Juniors 2024</h3>
                         <p class="item_precio">$199.999</p>
-                        <button>Comprar</button>
+                        <label class="item_cant_label" for="cantidad">Cantidad:</label>
+                        <input class="item_cant" type="number" name="cantidad" id="unidades" min="1" max="99" required>
+                        <button class="item_comprar">Comprar</button>
                 </div>
                 <div class="item">
                     <image class="item_imagen" src="multimedia/campera_boca.png" width=40%
                         alt="Campera impermeable de Boca">
                         <h3 class="item_titulo">Campera All-Weather Boca Juniors</h3>
                         <p class="item_precio">$99.999</p>
-                        <button>Comprar</button>
+                        <label class="item_cant_label" for="cantidad">Cantidad:</label>
+                        <input class="item_cant" type="number" name="cantidad" id="unidades" min="1" max="99" required>
+                        <button class="item_comprar">Comprar</button>
                 </div>
                 <div class="item">
                     <image class="item_imagen" src="multimedia/mate_boca.jpg" width=40% alt="Mate con bombilla de Boca">
                         <h3 class="item_titulo">Mate con bombilla Boca Juniors</h3>
                         <p class="item_precio">$34.999</p>
-                        <button>Comprar</button>
+                        <label class="item_cant_label" for="cantidad">Cantidad:</label>
+                        <input class="item_cant" type="number" name="cantidad" id="unidades" min="1" max="99" required>
+                        <button class="item_comprar">Comprar</button>
                 </div>
                 <div class="item">
                     <image class="item_imagen" src="multimedia/termo_boca.jpg" width=40% alt="Termo de Boca">
                         <h3 class="item_titulo">Termo de acero inoxidable Boca Juniors</h3>
                         <p class="item_precio">$79.999</p>
-                        <button>Comprar</button>
+                        <label class="item_cant_label" for="cantidad">Cantidad:</label>
+                        <input class="item_cant" type="number" name="cantidad" id="unidades" min="1" max="99" required>
+                        <button class="item_comprar">Comprar</button>
                 </div>
             </div>
 
@@ -195,7 +201,7 @@
 
         <section>
 
-            <h2 class="titulo_seis" id="contacto" class="tit_form">Dejanos un mensaje junto a tus datos para poder responderte:</h2>
+            <h2 class="titulo_seis" id="contacto">Dejanos un mensaje junto a tus datos para poder responderte:</h2>
 
             <form class="formulario" action="https://formspree.io/f/myzykkra" method="POST" target="_blank">
 
@@ -224,17 +230,19 @@
 
     <footer>
 
-        <h4>Segui a Boca en sus redes:</h4>
-        <ul>
-            <li><a target="_blank" href="https://www.instagram.com/bocajrs/"><i class="fi fi-brands-instagram"></i></a>
+        <h4 class="tit_footer">Segui a Boca en sus redes:</h4>
+        <ul class="lista_redes">
+            <li class="redes_item"><a target="_blank" href="https://www.instagram.com/bocajrs/"><i class="fi fi-brands-instagram"></i></a>
             </li>
-            <li><a target="_blank" href="https://www.facebook.com/BocaJuniors/"><i
+            <li class="redes_item"><a target="_blank" href="https://www.facebook.com/BocaJuniors/"><i
                         class="fi fi-brands-facebook"></i></a></li>
-            <li><a target="_blank" href="https://x.com/BocaJrsOficial"><i
+            <li class="redes_item"><a target="_blank" href="https://x.com/BocaJrsOficial"><i
                         class="fi fi-brands-twitter-alt-circle"></i></a></li>
-            <li><a target="_blank" href="https://www.youtube.com/@ElCanaldeBoca"><i
+            <li class="redes_item"><a target="_blank" href="https://www.youtube.com/@ElCanaldeBoca"><i
                         class="fi fi-brands-youtube"></i></a></li>
         </ul>
+
+        <p class="firma">Esta es una página creada por Pablo Aldana ☆</p>
 
     </footer>
 
